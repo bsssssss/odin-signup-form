@@ -1,0 +1,149 @@
+@font-face {
+    font-family: 'Norse';
+    src: url('./fonts/Norse-Bold.woff2') format('woff2'),
+        url('./fonts/Norse-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+:root {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+}
+
+.container section {
+    /* border: 1px solid black; */
+    height: 100vh;
+}
+
+.small-letters {
+    font-size: 14px;
+    font-style: italic;
+    color: #333333;
+}
+
+#signup-banner {
+    --banner-width: 500px;
+}
+
+#signup-banner img {
+    height: 100%;
+    width: var(--banner-width);
+    object-fit: cover;
+}
+
+#banner-top,
+#banner-credit p {
+    width: var(--banner-width);
+    color: white;
+    position: absolute;
+    text-align: center;
+}
+
+#banner-top {
+    top: 10%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+}
+
+#banner-top img {
+    width: 80px;
+    object-fit: scale-down;
+}
+
+#banner-top span {
+    font-family: "Norse";
+    font-size: 80px;
+    position: relative;
+    top: 10px;
+}
+
+#banner-credit p {
+    top: 95%;
+}
+
+#banner-credit a {
+    color: white;
+}
+
+#signup-main {
+    /* flex: 1; */
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #eeeeee;
+}
+
+#signup-hero {
+    padding: 4rem 4rem 2rem;
+    flex: 1;
+    height: fit-content;
+    font-size: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+#signup-form form,
+#signup-footer {
+    padding: 2rem 4rem;
+}
+
+#signup-hero p {
+    width: 70%;
+}
+
+#signup-form {
+    margin: auto 0;
+    flex: 1.5;
+    background-color: #ffffff;
+}
+
+#signup-hero p:last-child {
+    margin: 30px 0 0;
+}
+
+#signup-form input {
+    width: 20rem;
+    height: 2rem;
+}
+
+#signup-form div {
+    padding: 0;
+}
+
+#signup-footer {
+    flex: 1.5;
+}
+
+.form-row {
+    display: flex;
+    margin: 1rem 0;
+    gap: 2rem;
+}
+
+.form-row div {
+    display: flex;
+    flex-direction: column;
+}
+
+fieldset {
+    border-style: none;
+}
+
+legend {
+    font-size: 32px;
+}
