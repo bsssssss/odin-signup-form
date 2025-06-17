@@ -31,6 +31,30 @@ label {
     font-size: 14px;
 }
 
+input {
+    box-sizing: border-box;
+    font-family: inherit;
+    font-size: 16px;
+    padding: 0.4rem;
+    width: 20rem;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+}
+
+input:focus {
+    outline: solid var(--mosaic-blue);
+    box-shadow: 2px 2px 8px #aaaaaa;
+    border-color: transparent;
+}
+
+input:valid {
+    outline-color: forestgreen;
+}
+
+input:invalid {
+    outline-color: orangered;
+}
+
 .container {
     display: flex;
 }
@@ -144,22 +168,6 @@ label {
     flex: 1.5;
     background-color: #ffffff;
     box-shadow: 8px 8px 8px #dddddd;
-}
-
-#signup-form input {
-    box-sizing: border-box;
-    font-family: inherit;
-    font-size: 16px;
-    padding: 0.4rem;
-    width: 20rem;
-    border: 1px solid #ddd;
-    border-radius: 3px;
-}
-
-#signup-form input:focus {
-    outline: solid var(--mosaic-blue);
-    box-shadow: 2px 2px 8px #aaaaaa;
-    border-color: transparent;
 }
 
 #signup-form div {
