@@ -119,8 +119,7 @@ input:invalid {
 }
 
 #banner-top img {
-    width: 80px;
-    object-fit: scale-down;
+    width: 100px;
 }
 
 #banner-top span {
