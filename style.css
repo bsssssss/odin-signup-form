@@ -55,6 +55,7 @@ label {
 .form-row div {
     display: flex;
     flex-direction: column;
+    gap: 3px;
 }
 
 .bold {
@@ -142,16 +143,23 @@ label {
     margin: auto 0;
     flex: 1.5;
     background-color: #ffffff;
+    box-shadow: 8px 8px 8px #dddddd;
 }
 
 #signup-form input {
+    box-sizing: border-box;
     font-family: inherit;
-    padding: 0.5rem;
+    font-size: 16px;
+    padding: 0.4rem;
     width: 20rem;
+    border: 1px solid #ddd;
+    border-radius: 3px;
 }
 
 #signup-form input:focus {
-    outline-color: var(--mosaic-blue);
+    outline: solid var(--mosaic-blue);
+    box-shadow: 2px 2px 8px #aaaaaa;
+    border-color: transparent;
 }
 
 #signup-form div {
@@ -167,6 +175,10 @@ label {
     text-decoration: none;
 }
 
+#signup-footer a:hover {
+    text-decoration: underline;
+}
+
 #create-account-button {
     color: white;
     font-weight: bold;
@@ -175,5 +187,9 @@ label {
     background-color: var(--mosaic-blue);
     border-color: transparent;
     border-radius: 8px;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
+}
+
+#create-account-button:hover {
+    opacity: 0.9;
 }
