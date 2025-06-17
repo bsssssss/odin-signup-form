@@ -28,11 +28,13 @@ fieldset {
 
 legend {
     font-size: 32px;
+    font-weight: bold;
 }
 
 label {
     color: #666666;
     font-size: 14px;
+    font-weight: bold;
 }
 
 input {
