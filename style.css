@@ -9,6 +9,7 @@
 
 :root {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    --mosaic-blue: #176b7f;
 }
 
 * {
@@ -149,6 +150,10 @@ label {
     width: 20rem;
 }
 
+#signup-form input:focus {
+    outline-color: var(--mosaic-blue);
+}
+
 #signup-form div {
     padding: 0;
 }
@@ -157,12 +162,18 @@ label {
     flex: 1.5;
 }
 
+#signup-footer a {
+    color: var(--mosaic-blue);
+    text-decoration: none;
+}
+
 #create-account-button {
     color: white;
     font-weight: bold;
     font-size: 16px;
     padding: 0.75rem 3rem;
-    background-color: #176b7f;
+    background-color: var(--mosaic-blue);
     border-color: transparent;
     border-radius: 8px;
+    margin-bottom: 2rem;
 }
