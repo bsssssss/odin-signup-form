@@ -58,7 +58,7 @@ input:valid {
 }
 
 input:invalid {
-    outline-color: orangered;
+    outline-color: coral;
 }
 
 .container {
